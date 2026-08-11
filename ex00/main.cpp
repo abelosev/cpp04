@@ -31,6 +31,7 @@ int main()
 	std::cout << std::endl;
 
 	delete wcat;
+	delete wmeta;
 	delete dog;
 	delete cat;
 	delete meta;
