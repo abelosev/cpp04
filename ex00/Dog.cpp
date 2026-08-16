@@ -8,13 +8,14 @@ Dog::Dog() : Animal() {
 
 Dog::Dog(Dog const &src) : Animal(src) {
 	std::cout << "Dog copy constructor called" << std::endl;
-	setType();
 }
 
 Dog & Dog::operator=(Dog const &src) {
-	if (this != &src)
+	std::cout << "Dog assignment operator called" << std::endl;
+	if (this != &src) {
 		Animal::operator=(src);
-	return (*this); // не уверена
+	}
+	return (*this);
 }
 
 Dog::~Dog() {

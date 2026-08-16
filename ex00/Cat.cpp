@@ -8,13 +8,14 @@ Cat::Cat() : Animal() {
 
 Cat::Cat(Cat const &src) : Animal(src) {
 	std::cout << "Cat copy constructor called" << std::endl;
-	setType();
 }
 
 Cat & Cat::operator=(Cat const &src) {
-	if (this != &src)
-		Animal::operator=(src);
-	return (*this); // не уверена
+    std::cout << "Cat assignment operator called" << std::endl;
+    if (this != &src) {
+        Animal::operator=(src);
+    }
+    return (*this);
 }
 
 Cat::~Cat() {

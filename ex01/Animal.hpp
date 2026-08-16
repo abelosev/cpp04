@@ -16,7 +16,7 @@ class Animal {
 		std::string getType() const;
 		virtual Brain *getBrain() const;
 
-		//virtual Brain *getBrain() const = 0;
+		//virtual Brain *getBrain() const = 0; will make Animal abstract
 
 	protected:
 		std::string type;

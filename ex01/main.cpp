@@ -2,8 +2,6 @@
 #include "Cat.hpp"
 #include <iostream>
 
-// не забыть проверить на leaks
-
 int main() {
 
 	int const nbAnimal = 3;
